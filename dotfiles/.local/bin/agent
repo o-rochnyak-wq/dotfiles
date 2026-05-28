@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+const { execSync } = require("node:child_process");
+
+execSync("curl -fsSL https://cursor.com/install | bash", {
+  stdio: "inherit",
+  shell: "/bin/bash",
+});
